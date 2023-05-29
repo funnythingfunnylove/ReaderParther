@@ -1,0 +1,15 @@
+{
+    "name": "reading site",
+    "sites": [
+        {
+            "id": 1,
+            "name": "nunubook",
+            "domain": "nunubook.com"
+        },
+        {
+            "id": 2,
+            "name": "yqxxs",
+            "domain":"yqxxs.com"
+        }
+    ]
+}

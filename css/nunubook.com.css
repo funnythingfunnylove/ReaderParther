@@ -1,0 +1,61 @@
+@font-face {
+    font-family: "fzss";
+    font-style: normal;
+    font-weight: 300;
+    src: url('chrome-extension://__MSG_@@extension_id__/web_accessible_resources/font/fzss.woff') format('woff');
+}
+@font-face {
+    font-family: "xwwk";
+    font-style: normal;
+    font-weight: normal;
+    src: url("chrome-extension://__MSG_@@extension_id__/web_accessible_resources/font/LXGWWenKai-Regular.woff2") format("woff2");
+}
+
+
+.read_page_con {
+    font-family: "xwwk";
+    font-size: 20px;
+}
+
+a {
+    font-family: "fzss";
+    font-size: 20px;
+    background-color: tomato;
+    width: 80px;
+    border-radius: 3em;
+    text-align: center;
+    box-sizing: border-box;
+    &:link {
+        color:rgb(0, 0, 0);
+        text-decoration: none;
+    }
+}
+
+#pre_botton {
+    position: fixed;
+    bottom : 20px;
+    right: 240px;
+    z-index: 2;
+}
+
+#next_botton {
+    position: fixed;
+    bottom : 20px;
+    right: 100px;
+    z-index: 2;
+}
+
+
+#float_menu {
+    position: fixed;
+    bottom : 20px;
+    right: 20px;
+    z-index: 3;
+}
+
+#font_text {
+    position: fixed;
+    bottom: 20px;
+    right: 350px;
+    z-index: 2;
+}

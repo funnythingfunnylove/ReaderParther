@@ -1,0 +1,7 @@
+{
+    "name" : "dafault",
+    "theme": "default",
+    "mode": "dark",
+    "backgroundColor":"#64b6ac",
+    "fontColor": "#fcfffd"
+}

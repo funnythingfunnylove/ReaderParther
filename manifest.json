@@ -1,0 +1,50 @@
+{
+  "manifest_version": 3,
+  "name": "伴读 - Reader Parther",
+  "version": "1.0",
+  "description": "better reading experenices",
+  "author": "fl@fenglei.me",
+  "icons": {
+    "48": "icons/icon_48.png",
+    "96": "icons/icon_96.png",
+    "128": "icons/icon_128.png"
+  },
+  "permissions": [
+    "contextMenus",
+    "privacy",
+    "storage",
+    "tabs",
+    "unlimitedStorage",
+    "webNavigation",
+    "webRequest",
+    "declarativeNetRequest",
+    "declarativeNetRequestWithHostAccess",
+    "declarativeNetRequestFeedback",
+    "scripting",
+    "activeTab",
+    "bookmarks"
+  ],
+  "host_permissions": ["<all_urls>"],
+
+  "background": {
+    "service_worker": "service_worker.js"
+  },
+  "action": {
+    "default_title": "Action Button",
+    "default_popup": "popup/pop.html"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "js/*",
+        "plugins/*",
+        "site/*",
+        "rules/*",
+        "css/*",
+        "web_accessible_resources/*",
+        "theme/*"
+      ],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
