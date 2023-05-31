@@ -1,0 +1,12 @@
+@font-face {
+    font-family: "fzss";
+    font-style: normal;
+    font-weight: 300;
+    src: url('chrome-extension://__MSG_@@extension_id__/fonts/fzss.woff') format('woff');
+}
+@font-face {
+    font-family: "霞鹜文楷";
+    font-style: normal;
+    font-weight: normal;
+    src: url("chrome-extension://__MSG_@@extension_id__/fonts/LXGWWenKai-Regular.woff2") format("woff2");
+}

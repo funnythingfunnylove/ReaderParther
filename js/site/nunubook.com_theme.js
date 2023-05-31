@@ -36,6 +36,7 @@ function get_settings(key) {
   return chrome.storage.local.get(key);
 }
 
+
 function setSettings(changes, areaName) {
 
   let context = document.getElementsByClassName("read_page_con")[0];
@@ -56,7 +57,9 @@ function setSettings(changes, areaName) {
   });
 }
 
+
+
+
 // init()
 setSettings();
-
 chrome.storage.onChanged.addListener(setSettings);

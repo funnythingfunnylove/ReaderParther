@@ -44,9 +44,6 @@ function inject_menu() {
     insert_position.appendChild(menu_);
 }
 
-
-
-
 function remove_content(){
     const next_url = document.getElementById("booksnext_btn").getAttribute("href");
     document.getElementById("topbox").remove();
@@ -81,4 +78,6 @@ function format_document( ){
     inject_menu();
 };
 
+
 document.addEventListener("DOMContentLoaded", format_document());
+

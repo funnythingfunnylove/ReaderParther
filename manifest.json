@@ -30,7 +30,7 @@
     "service_worker": "service_worker.js"
   },
   "action": {
-    "default_title": "Action Button",
+    "default_title": "伴读 - ReadParther",
     "default_popup": "popup/pop.html"
   },
   "web_accessible_resources": [
@@ -42,9 +42,15 @@
         "rules/*",
         "css/*",
         "web_accessible_resources/*",
-        "theme/*"
+        "theme/*",
+        "fonts/*",
+        "popup/*",
+        "lib/*"
       ],
       "matches": ["<all_urls>"]
     }
-  ]
+  ],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self';"
+  }
 }

@@ -2,13 +2,13 @@
     font-family: "fzss";
     font-style: normal;
     font-weight: 300;
-    src: url('chrome-extension://__MSG_@@extension_id__/web_accessible_resources/font/fzss.woff') format('woff');
+    src: url('chrome-extension://__MSG_@@extension_id__/fonts/fzss.woff') format('woff');
 }
 @font-face {
     font-family: "xwwk";
     font-style: normal;
     font-weight: normal;
-    src: url("chrome-extension://__MSG_@@extension_id__/web_accessible_resources/font/LXGWWenKai-Regular.woff2") format("woff2");
+    src: url("chrome-extension://__MSG_@@extension_id__/fonts/LXGWWenKai-Regular.woff2") format("woff2");
 }
 
 
