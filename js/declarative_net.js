@@ -41,17 +41,14 @@ function printAllRules() {
 }
 
 function loadRules() {
-    let rules = chrome.runtime.getURL('rules/site.json');
-    fetch(rules).then(response => response.json())
-    .then(data => {
-            console.log(data);
+    fetch(chrome.runtime.getURL('rules/site.json')).then(response => response.json()).then(data => {
             data.sites.forEach(site => add_rule(site));
-        }
-    )
+        });
 }
 
 function remove_allRules()  {
     let rules = getAllSessionRules();
     rules.forEach(rule => {remove_rule(rule);});
 }
+
 loadRules();

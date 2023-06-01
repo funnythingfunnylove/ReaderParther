@@ -41,21 +41,13 @@ a {
 #next_botton {
     position: fixed;
     bottom : 20px;
-    right: 100px;
+    right: 130px;
     z-index: 2;
 }
 
-
-#float_menu {
+#menu {
     position: fixed;
     bottom : 20px;
     right: 20px;
-    z-index: 3;
-}
-
-#font_text {
-    position: fixed;
-    bottom: 20px;
-    right: 350px;
     z-index: 2;
 }

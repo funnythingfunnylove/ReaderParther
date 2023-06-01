@@ -1,0 +1,17 @@
+
+html,body {
+    height: 100%;
+}
+
+.container-fluid, .col, .row {
+    height: 100%
+}
+
+#page, #tabs, #viewport {
+    height: 100%;
+}
+
+#page {
+    background-color: aquamarine;
+    height: 10%;
+}

@@ -36,3 +36,7 @@ body {
     height:100%;
 }
 
+a.test {
+    font-weight: bold;
+}
+

@@ -33,6 +33,11 @@
     "default_title": "伴读 - ReadParther",
     "default_popup": "popup/pop.html"
   },
+  "options_ui" : {
+    "page" : "options/options.html",
+    "open_in_tab": true
+
+  },
   "web_accessible_resources": [
     {
       "resources": [

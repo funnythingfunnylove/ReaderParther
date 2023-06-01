@@ -43,17 +43,14 @@ function setSettings(changes, areaName) {
   chrome.storage.local.get(null).then((result) => {
     console.log(result);
     console.log("根据设置修改页面");
-    console.log("current font is " + result["font_name"]);
-    console.log("current fontColor is " + result["fontColor"]);
-    console.log("current backgroundColor is " + result["backgroundColor"]);
-    console.log("current body margin is " + result["page_margin"]);
 
     context.style.fontFamily = result["font_name"];
     context.style.fontSize = result["font_size"];
     context.style.color = result["fontColor"];
     context.style.lineHeight = result["line_height"];
-    document.body.style.backgroundColor = result["backgroundColor"];
-    document.getElementsByTagName("body")[0].style.margin = result["page_margin"];
+    $("body").attr("style", `background-color: ${result["backgroundColor"]}; margin: ${result["page_margin"]}`)
+    //document.body.style.backgroundColor = result["backgroundColor"];
+    //document.getElementsByTagName("body")[0].style.margin = result["page_margin"];
   });
 }
 
