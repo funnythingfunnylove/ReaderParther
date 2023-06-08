@@ -11,32 +11,8 @@ body {
     height: 100%;
 }
 
-.container-fluid {
-    height: 100%;
-    padding: 0% !important;
+#settings {
+    width: 450px;
+    height: 300px;
+    background-color: aquamarine;
 }
-
-.row {
-    height: 100%;
-}
-
-.col {
-    height: 100%;
-}
-
-#tabs {
-    background-color: bisque;
-    height: 10%;
-}
-
-#viewport {
-    height: 100%;
-}
-#settings_area {
-    height:100%;
-}
-
-a.test {
-    font-weight: bold;
-}
-

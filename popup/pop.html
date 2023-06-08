@@ -5,26 +5,37 @@
     <meta charset="utf-8" />
     <link rel="stylesheet" href="pop.css" />
     <link rel="stylesheet" href="../lib/bootstrap/css/bootstrap.css" />
-    <script src="../lib/jquery.js"></script>
     <script src="../lib/bootstrap/js/bootstrap.js"></script>
+    <script src="../lib/jquery.js"></script>
     <script src="pop.js"></script>
 </head>
 
 <body>
-    <div class="container-fluid mw-100" id="settings">
-        <div class="container-fluid" id="tabs">
-            <a class="nav-link" href="#">伴读 - Reading Parther</a>
-        </div>
-        <div class="container-fluid" id="viewport">
-            <div class="row" id = "settings_area">
-                <div class="col col-2" style="background-color: rgb(131, 58, 146)" id="side">
-                    Side
-                    <a href="http://jquery.com/">jQuery</a>
-                </div>
-                <div class="col" id="content">
-                    <
-                </div>
-            </div>
+    <div class="container" id="app">
+        <nav class="navbar align-item-center">
+            <img src="../icons/icon_96.png" height="40px"> </nav>
+            <a class="navitem text-decoration-none"> 伴读 - Reader Parther</a>
+        </nav>
+        <div class="dflex" id="settings">
+              <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" role="switch" id="mode_switch">
+                <label class="form-check-label" for="mode_switch">暗黑模式</label>
+              </div>
+              <label>字体选择</label>
+              <select class="form-select" aria-label="select-text" id="font_name">
+                <option value="xwwk">霞鹜文楷</option>
+                <option value="fzzs">方正书宋</option>
+              </select>
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="text-color">font Color</span>
+                <input id="fontColor"  type="text" class="form-contorl" placeholder="" aria-label="Text Color">
+              </div>
+              <div>
+                <label for="page_margin" class="form-label">Page Margin</label>
+                <input type="range" class="form-range" min="10" max="50" step="10" id="page_margin">
+              </div>
+              
+              
         </div>
     </div>
 </body>

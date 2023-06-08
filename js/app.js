@@ -37,9 +37,13 @@ function create_menu() {
     insert_position.append(app);
 }
 
+function anime_menu() {
+    $("#menu").animejs({translateX: 550, duration: 3000}); 
+}
 
 function loadingApp() {
     create_menu();
+    anime_menu();
 }
 
 

@@ -7,8 +7,9 @@ function contentRegister(domain_name) {
       {
         id: domain_name,
         js: [
-          "lib/anime.js",
           "lib/jquery.js",
+          "lib/anime.min.js",
+          "lib/jquery.animejs.js",
           "js/message_c.js",
           "js/app.js",
           `js/site/${domain_name}.js`,
