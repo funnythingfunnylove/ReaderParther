@@ -3,6 +3,14 @@
 
 // this scripts need jquery.
 
+function create_bg_div() {
+    let bg_div = $("<div></div>");
+
+    bg_div.attr("id", "bg_div");
+    //bg_div.css("z-index", "-1");
+    $("body").append(bg_div);
+}
+
 function create_menu() {
     
     const next_url = $("#booksnext_btn").attr("href");
@@ -42,6 +50,7 @@ function anime_menu() {
 }
 
 function loadingApp() {
+    create_bg_div();
     create_menu();
     anime_menu();
 }

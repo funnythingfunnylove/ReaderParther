@@ -48,7 +48,12 @@ function setSettings(changes, areaName) {
     context.style.fontSize = result["font_size"];
     context.style.color = result["fontColor"];
     context.style.lineHeight = result["line_height"];
-    $("body").attr("style", `background-color: ${result["backgroundColor"]}; margin: ${result["page_margin"]}`)
+    //$("body").attr("style", `background-color: ${result["backgroundColor"]}; margin: ${result["page_margin"]}`)
+    $("#bg_div").css("background-image", `url("${chrome.runtime.getURL('img/wallpaper_2.jpg')})`)
+    $("#bg_div").css("background-size", "cover")
+    $("#bg_div").css("background-position", "center")
+    $("#bg_div").css("background-repeat", "repeat")
+    $("body").attr("style", `margin: ${result["page_margin"]}`)
     //document.body.style.backgroundColor = result["backgroundColor"];
     //document.getElementsByTagName("body")[0].style.margin = result["page_margin"];
   });
@@ -58,5 +63,6 @@ function setSettings(changes, areaName) {
 
 
 // init()
-setSettings();
+//setSettings();
+$(document).ready(setSettings);
 chrome.storage.onChanged.addListener(setSettings);

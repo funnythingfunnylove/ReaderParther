@@ -53,5 +53,21 @@ function extensionInit() {
   loadTheme("default");
 }
 
+function changeTheme(changes, area) {
+  console.log(`change area is ${area}`);
+
+  if(typeof changes['mode'].newValue !== 'undefined') {
+    loadTheme(changes['mode'].newValue);
+    console.log(`change theme to ${changes.mode.newValue}`);
+  }
+  
+}
+
+
+
+
 // this will only run on first install
 chrome.runtime.onInstalled.addListener(extensionInit);
+
+// this will run on every update change with theme json
+chrome.storage.onChanged.addListener(changeTheme);

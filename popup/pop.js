@@ -36,7 +36,7 @@ function get_settings_from_storage() {
             return result.mode == "dark" ? true : false;
         });
         $("#page_margin").attr("value", result.page_margin);
-
+        $("#font_size").attr("value", result.font_size);
     });
 }
 
@@ -63,9 +63,13 @@ function set_listen_events() {
         chrome.storage.local.set({font_name: font});
     });
     $("#settings").on("change", "#page_margin", () => {
-        chrome.storage.local.set({page_margin: $("#page_margin").val()});
+        chrome.storage.local.set({ page_margin: `${$("#page_margin").val()}px` });
+    });
+    $("#settings").on("change", "#font_size", () => {
+        chrome.storage.local.set({ font_size: `${$("#font_size").val()}px` });
     });
 }
+
 
 
  // init settings
